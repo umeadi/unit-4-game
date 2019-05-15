@@ -7,3 +7,12 @@ body {
 p {
     font-weight: 300px;
 }
+
+.titleCard {
+    background-color: #e59124;
+}
+
+.bodyCard {
+    background-color: #ffe8cc;
+    color: #08af59;
+}
