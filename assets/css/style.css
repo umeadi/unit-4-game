@@ -21,8 +21,28 @@ h1 { text-align: center;
     color: #08af59;
 }
 
+.d-flex {
+    background-color:#06a7e2;
+}
+
 .scoreCard {
     background-color: #08af59;
+}
+
+.crystal2 {
+    margin-left:40px;
+}
+
+.crystal3 {
+    margin-left:20px;
+}
+
+.crystal4 {
+    margin-left:20px;
+}
+
+.scoreTitleCard {
+    background-color: #06a7e2;
 }
 
 .winCard {
