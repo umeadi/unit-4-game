@@ -24,3 +24,8 @@ p {
 .winCard {
     background-color: #06e2be;
 }
+
+img[src] {
+    height: 120px;
+    width: 120px;
+}
