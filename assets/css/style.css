@@ -12,6 +12,10 @@ p {
     background-color: #e59124;
 }
 
+h1 { text-align: center;
+
+}
+
 .bodyCard {
     background-color: #ffe8cc;
     color: #08af59;
@@ -28,4 +32,5 @@ p {
 img[src] {
     height: 120px;
     width: 120px;
+    margin-top:10px
 }

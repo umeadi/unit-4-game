@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
+
 </head>
+
 <body>
-<div class="container">
-    
+    <div class="container">
+
         <div class="row"> <br> </div>
         <div class="row">
-        <div class="card titleCard" style="width: 36rem;">
-        <div class="card-body">
-            <header class="head">
-                <h1>Crystal Collector!</h1>
-            </header>
+            <div class="card titleCard" style="width: 36rem;">
+                <div class="card-body">
+                    <header class="head">
+                        <h1>Crystal Collector!</h1>
+                    </header>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        <div class="row"> <br> </div>
+
         <div class="row">
-    
-        <div class="card bodyCard" style="width: 36rem;">
-        <div class="card-body">
-            <div class="instructions">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four cystals below. By clicking on a crystal you will add a specific amoujnt of points to your total score.</p>
-            <p>You win the game by matching your total score to a random number, you lose if your total score goes above the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game starts, the game will change the values of each crystal.</p>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="row"> <br> </div>
-    <div class="row">
-        <div class="card scoreCard .d-inline-block" style="width: 13rem;">
-        <div class="card-body ">
-            <h3 class="randomNumber">Score</h3>
-        </div>
-        
 
-    </div>
-    
-    <div class="card winCard .d-inline-block" style="margin-left: 20px; width: 13rem;">
-            <div class="card-body">
-    <div class="scoreBoard">
-        <p class="winnerIsYou">You won!!</p>
-        <p class="wins">Wins:</p>
-        <p class="losses">Losses:</p>
-        </div>
+            <div class="card bodyCard " style="width: 36rem; margin-top:10px;">
+                <div class="card-body">
+                    <div class="instructions">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four cystals below. By clicking on a crystal you will add a specific amoujnt of
+                            points to your total score.</p>
+                        <p>You win the game by matching your total score to a random number, you lose if your total
+                            score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="row">
+            <div class="card scoreCard .d-inline-block" style="width: 17.61rem; margin-top:10px;">
+                <div class="card-body ">
+                    <h3 class="randomNumber">Score</h3>
+                </div>
+
+
+            </div>
+
+            <div class="card winCard .d-inline-block" style="margin-top:10px; margin-left: 11px; width: 17.61rem;">
+                <div class="card-body">
+                    <div class="scoreBoard">
+                        <p class="winnerIsYou">You won!!</p>
+                        <p class="wins">Wins:</p>
+                        <p class="losses">Losses:</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <img class="crystal1 rounded img-thumbnail" src="assets/images/crystal1.jpg" alt="crystal picture 1">
+            <img class="crystal2 rounded img-thumbnail" src="assets/images/crystal2.jpg" alt="crystal picture 2">
+            <img class="crystal3 rounded img-thumbnail" src="assets/images/crystal3.jpg" alt="crystal picture 3">
+            <img class="crystal4 rounded img-thumbnail" src="assets/images/crystal4.jpg" alt="crystal picture 4">
+
+
+        </div>
+        <div class="scoreHeader">
+            <p>Your total score is:</p>
+
+        </div>
+        <div class="currentScore">
+
+
+        </div>
     </div>
-    </div>
-    <div class="row"> <br> </div>
-    <div class="crystalDisplay">
-        <img class="crystal1" src="assets/images/crystal1.jpg" alt="crystal picture 1">
-        <img class="crystal2" src="assets/images/crystal2.jpg" alt="crystal picture 2">
-        <img class="crystal3" src="assets/images/crystal3.jpg" alt="crystal picture 3">
-        <img class="crystal4" src="assets/images/crystal4.jpg" alt="crystal picture 4">
-
-
-    </div>
-    <div class="scoreHeader">
-        <p>Your total score is:</p>
-
-    </div>
-    <div class="currentScore">
-        
-
-    </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
-<script src=/javascript/game.js></script>  
-
-
-   
-       
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src=/javascript/game.js> </script> </body> </html>
