@@ -16,3 +16,11 @@ p {
     background-color: #ffe8cc;
     color: #08af59;
 }
+
+.scoreCard {
+    background-color: #08af59;
+}
+
+.winCard {
+    background-color: #06e2be;
+}
