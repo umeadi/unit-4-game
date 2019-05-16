@@ -16,6 +16,8 @@ h1 { text-align: center;
 
 }
 
+
+
 .bodyCard {
     background-color: #ffe8cc;
     color: #08af59;
@@ -30,23 +32,28 @@ h1 { text-align: center;
 }
 
 .crystal2 {
-    margin-left:40px;
+    margin-left:35px;
 }
 
 .crystal3 {
-    margin-left:20px;
+    margin-left:24px;
 }
 
 .crystal4 {
-    margin-left:20px;
+    margin-left:35px;
 }
 
-.scoreTitleCard {
+.currentScoreTitle {
     background-color: #06a7e2;
+    line-height:75%;
 }
 
 .winCard {
     background-color: #06e2be;
+}
+
+.currentScore {
+    background-color: #06a7e2;
 }
 
 img[src] {
