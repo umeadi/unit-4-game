@@ -1,9 +1,9 @@
 // GLOBAL VARIABLES
 
-var randomNumber;
-var currentScore;
-var wins;
-var losses;
+var randomNumber =0;
+var currentScore =0;
+var wins =0;
+var losses =0;
 
 var crystal = {
     crystal1:
@@ -67,6 +67,8 @@ var startGame = function () {
     // Display the HTML on page to reflect all of our changes
     $('.currentScore').html(currentScore);
     $('.randomNumber').html(randomNumber);
+    $('.wins').html(wins);
+    $('.losses').html(losses);
 
     // Test
     console.log('-------------------------------------------------------------------')
@@ -89,6 +91,10 @@ var addValues = function(crystal) {
 
     // Test
     console.log('Your Score: ' + currentScore);
+
+
+
+    
 }
 
 
@@ -101,10 +107,18 @@ var winChecker = function () {
         console.log('You Lose');
 
         // Add to loss count
+        losses++;
+
+        $('.losses').html(losses);
 }
 
     else if (currentScore == randomNumber) {
         alert('You Win!!');
+        console.log('You Win!')
+
+        wins++;
+
+        $('.wins').html(wins);
     }
 }
 
