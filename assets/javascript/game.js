@@ -1,9 +1,9 @@
 // GLOBAL VARIABLES
 
-var randomNumber =0;
-var currentScore =0;
-var wins =0;
-var losses =0;
+var randomNumber = 0;
+var currentScore = 0;
+var wins = 0;
+var losses = 0;
 
 var crystal = {
     crystal1:
@@ -41,7 +41,7 @@ var crystal = {
 
 // Random Numnber Generator Function
 
-var getRandom = function(min, max) {
+var getRandom = function (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -62,21 +62,21 @@ var startGame = function () {
     crystal.crystal2.value = getRandom(1, 12);
     crystal.crystal3.value = getRandom(1, 12);
     crystal.crystal4.value = getRandom(1, 12);
-    
-    
+
+
     // Display the HTML on page to reflect all of our changes
     $('.currentScore').html(currentScore);
     $('.randomNumber').html(randomNumber);
-    
+
     // Test
     console.log('-------------------------------------------------------------------')
     console.log('Target Score: ' + randomNumber);
-    console.log('Crystal 1: '+ crystal.crystal1.value + ' | Crystal 2: ' + crystal.crystal2.value + ' | Crystal 3: ' + crystal.crystal3.value + ' | Crystal 4: ' + crystal.crystal4.value);
+    console.log('Crystal 1: ' + crystal.crystal1.value + ' | Crystal 2: ' + crystal.crystal2.value + ' | Crystal 3: ' + crystal.crystal3.value + ' | Crystal 4: ' + crystal.crystal4.value);
     console.log('-------------------------------------------------------------------');
 }
 
 // Calculate totals from crystals as they are clicked
-var addValues = function(crystal) {
+var addValues = function (crystal) {
 
     // Calulates current total score
     currentScore = currentScore + crystal.value;
@@ -92,7 +92,7 @@ var addValues = function(crystal) {
 
 
 
-    
+
 }
 
 
@@ -100,7 +100,7 @@ var addValues = function(crystal) {
 var winChecker = function () {
 
     // Check if current score is larger than target score
-    if(currentScore > randomNumber) {
+    if (currentScore > randomNumber) {
         alert('You Lose :-( ');
         console.log('You Lose');
 
@@ -112,7 +112,7 @@ var winChecker = function () {
 
         // Restart game
         startGame();
-}
+    }
 
     // Check if current score equals target score
     else if (currentScore == randomNumber) {
