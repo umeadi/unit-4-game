@@ -64,6 +64,8 @@ var startGame = function () {
     
     
     // Change the HTML to reflect all of these changes
+    $('.currentScore').html(currentScore);
+    $('.randomNumber').html(randomNumber);
 
     // Testing
     console.log('----------------------------------------------------')
