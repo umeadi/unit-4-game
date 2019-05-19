@@ -44,7 +44,7 @@ var getRandom = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
+// Start and restart game 
 var startGame = function () {
 
     // Reset the current score
@@ -53,11 +53,28 @@ var startGame = function () {
 
     // Set a new target score (btw 19 and 120)
 
-    randomNumber = Math.floor(Math.random()* (120 - 19 +1)) + 19;
+    randomNumber = getRandom(19, 120);
+
+    // Assign values to each crystal (btw 1 and 12)
+
+    crystal.crystal1.value = getRandom(1, 12);
+    crystal.crystal2.value = getRandom(1, 12);
+    crystal.crystal3.value = getRandom(1, 12);
+    crystal.crystal4.value = getRandom(1, 12);
+    
+    
     // Change the HTML to reflect all of these changes
+
+    // Testing
+    console.log('----------------------------------------------------')
+    console.log('Target Score: ' + randomNumber);
+    console.log('Crystal 1: '+ crystal.crystal1.value + ' | Crystal 2: ' + crystal.crystal2.value + ' | Crystal 3: ' + crystal.crystal3.value + ' | Crystal 4: ' + crystal.crystal4.value);
+    console.log('----------------------------------------------------');
 }
 
 
+
+startGame();
 
 
 $(".crystal1").on("click", function () {
