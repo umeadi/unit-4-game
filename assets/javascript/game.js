@@ -1,8 +1,30 @@
 var randomNumber;
+var currentscore;
 var wins;
 var losses;
 
-console.log(randomNumber);
+var crystal = {
+    crystal1:
+    {
+        name: 'crystal1',
+        value: 0
+    },
+    crystal2:
+    {
+        name: 'crystal2',
+        value: 0
+    },
+    crystal3:
+    {
+        name: 'crystal3',
+        value: 0
+    },
+    crystal4:
+    {
+        name: 'crystal4',
+        value: 0
+    }
+};
 
 
 // player will be shown a random number at the start of the game
@@ -12,6 +34,18 @@ console.log(randomNumber);
 // if the total from the crystals equals the random numbner a win will be generated
 // if the totla is larger than the random numnber, a loss will be generated
 //
+
+var startGame = function () {
+
+    // Reset the current score
+
+    var currentScore = 0;
+    
+    // Set a new target score (btw 19 and 120)
+    // Change the HTML to reflect all of these changes
+}
+
+
 
 
 $(".crystal1").on("click", function () {
