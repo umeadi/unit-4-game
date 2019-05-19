@@ -1,6 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif, Arial, Helvetica;
-    background-color: #333333;
+    background-image: url(../images/use_your_illusion.jpg);
+    
+    height: 100%;
+    width: 100;
+    margin:auto;
     color: white;
 }
 
