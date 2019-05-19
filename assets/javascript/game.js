@@ -40,8 +40,10 @@ var startGame = function () {
     // Reset the current score
 
     var currentScore = 0;
-    
+
     // Set a new target score (btw 19 and 120)
+
+    randomNumber = Math.floor(Math.random()* (120 - 19 +1)) + 19;
     // Change the HTML to reflect all of these changes
 }
 
