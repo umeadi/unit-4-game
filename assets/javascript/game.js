@@ -67,9 +67,7 @@ var startGame = function () {
     // Display the HTML on page to reflect all of our changes
     $('.currentScore').html(currentScore);
     $('.randomNumber').html(randomNumber);
-    $('.wins').html(wins);
-    $('.losses').html(losses);
-
+    
     // Test
     console.log('-------------------------------------------------------------------')
     console.log('Target Score: ' + randomNumber);
@@ -109,7 +107,11 @@ var winChecker = function () {
         // Add to loss counter
         losses++;
 
+        // Update loss count HTML 
         $('.losses').html(losses);
+
+        // Restart game
+        startGame();
 }
 
     // Check if current score equals target score
@@ -120,7 +122,11 @@ var winChecker = function () {
         // Add to win counter
         wins++;
 
+        // Update win count HTML
         $('.wins').html(wins);
+
+        // Restart game
+        startGame();
     }
 }
 
