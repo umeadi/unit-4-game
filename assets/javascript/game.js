@@ -106,16 +106,18 @@ var winChecker = function () {
         alert('You Lose :-( ');
         console.log('You Lose');
 
-        // Add to loss count
+        // Add to loss counter
         losses++;
 
         $('.losses').html(losses);
 }
 
+    // Check if current score equals target score
     else if (currentScore == randomNumber) {
         alert('You Win!!');
         console.log('You Win!')
 
+        // Add to win counter
         wins++;
 
         $('.wins').html(wins);
