@@ -1,7 +1,7 @@
 // GLOBAL VARIABLES
 
 var randomNumber;
-var currentscore;
+var currentScore;
 var wins;
 var losses;
 
@@ -38,6 +38,7 @@ var crystal = {
 //
 
 // FUNCTIONS
+
 // Random Numnber Generator Function
 
 var getRandom = function(min, max) {
@@ -49,7 +50,7 @@ var startGame = function () {
 
     // Reset the current score
 
-    var currentScore = 0;
+    currentScore = 0;
 
     // Set a new target score (btw 19 and 120)
 
@@ -67,11 +68,20 @@ var startGame = function () {
     $('.currentScore').html(currentScore);
     $('.randomNumber').html(randomNumber);
 
-    // Testing
-    console.log('----------------------------------------------------')
+    // Test
+    console.log('-------------------------------------------------------------------')
     console.log('Target Score: ' + randomNumber);
     console.log('Crystal 1: '+ crystal.crystal1.value + ' | Crystal 2: ' + crystal.crystal2.value + ' | Crystal 3: ' + crystal.crystal3.value + ' | Crystal 4: ' + crystal.crystal4.value);
-    console.log('----------------------------------------------------');
+    console.log('-------------------------------------------------------------------');
+}
+
+// Calculate totals from crystals as they are clicked
+var addValues = function(crystal) {
+
+    currentScore = currentScore + crystal.value;
+
+    // Test
+    console.log('Your Score: ' + currentScore);
 }
 
 
@@ -79,34 +89,30 @@ var startGame = function () {
 startGame();
 
 
-$(".crystal1").on("click", function () {
+$(".crystal1").on('click', function () {
 
-    // Clicking the crystal triggers an alert message.
-    alert("You clicked crystal number1!");
-    console.log("You clicked crystal number 1");
+    // Clicking on crystal will add value to current score
+    addValues(crystal.crystal1);
 
 });
 
 $(".crystal2").on("click", function () {
 
-    // Clicking the crystal triggers an alert message.
-    alert("You clicked crystal number 2!");
-    console.log("You clikced crystal number 2");
+    // Clicking on crystal will add value to current score
+    addValues(crystal.crystal2);
 
 });
 
 $(".crystal3").on("click", function () {
 
-    // Clicking the crystal triggers an alert message.
-    alert("You clicked crystal number 3!");
-    console.log("You clikced crystal number 3");
+    // Clicking on crystal will add value to current score
+    addValues(crystal.crystal3);
 
 });
 
 $(".crystal4").on("click", function () {
 
-    // Clicking the crystal triggers an alert message.
-    alert("You clicked crystal number 4!");
-    console.log("You clikced crystal number 4");
+    // Clicking on crystal will add value to current score
+    addValues(crystal.crystal4);
 
 });
