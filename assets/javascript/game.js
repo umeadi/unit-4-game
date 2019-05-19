@@ -84,10 +84,29 @@ var addValues = function(crystal) {
     // Update the HTML on page to current score
     $('.currentScore').html(currentScore);
 
+    // Call win checker function
+    winChecker();
+
     // Test
     console.log('Your Score: ' + currentScore);
 }
 
+
+// Check if user won or lost
+var winChecker = function () {
+
+    // Check if current score is larger than target score
+    if(currentScore > randomNumber) {
+        alert('You Lose :-( ');
+        console.log('You Lose');
+
+        // Add to loss count
+}
+
+    else if (currentScore == randomNumber) {
+        alert('You Win!!');
+    }
+}
 
 
 startGame();
