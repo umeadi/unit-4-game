@@ -1,3 +1,5 @@
+// GLOBAL VARIABLES
+
 var randomNumber;
 var currentscore;
 var wins;
@@ -34,6 +36,14 @@ var crystal = {
 // if the total from the crystals equals the random numbner a win will be generated
 // if the totla is larger than the random numnber, a loss will be generated
 //
+
+// FUNCTIONS
+// Random Numnber Generator Function
+
+var getRandom = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 
 var startGame = function () {
 
