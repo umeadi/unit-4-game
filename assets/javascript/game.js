@@ -34,7 +34,7 @@ var crystal = {
 // every crystal needs to have a random value between one and 12
 // when clicking each crystal, the value should be getting added to the curren total
 // if the total from the crystals equals the random numbner a win will be generated
-// if the totla is larger than the random numnber, a loss will be generated
+// if the total is larger than the random numnber, a loss will be generated
 //
 
 // FUNCTIONS
@@ -64,7 +64,7 @@ var startGame = function () {
     crystal.crystal4.value = getRandom(1, 12);
     
     
-    // Change the HTML to reflect all of these changes
+    // Display the HTML on page to reflect all of our changes
     $('.currentScore').html(currentScore);
     $('.randomNumber').html(randomNumber);
 
@@ -78,7 +78,11 @@ var startGame = function () {
 // Calculate totals from crystals as they are clicked
 var addValues = function(crystal) {
 
+    // Calulates current total score
     currentScore = currentScore + crystal.value;
+
+    // Update the HTML on page to current score
+    $('.currentScore').html(currentScore);
 
     // Test
     console.log('Your Score: ' + currentScore);
